@@ -2,5 +2,5 @@
 # first script will start and read configuarion file 
 
 
-## 1. Read config files, if there is no config files then exit
-## 2. 
+## 1. Read config files, if there is no config files then raise error
+## 2. If cannot read source file then exit
