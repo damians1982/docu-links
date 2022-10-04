@@ -6,7 +6,7 @@ from os.path import isdir
 
 print ("Loading configuration...")
 
-start_folder = r'c:\Users\poczt\Dropbox\Dokumenty\KSIAZKI_EBOOKI\prawo-gumiakow.pdf' #write starting folder here, r' = means raw string
+start_folder = r'c:\Users\poczt\Dropbox\Dokumenty\KSIAZKI_EBOOKI' #write starting folder here, r' = means raw string
 
 class ConfigError(Exception):
     pass

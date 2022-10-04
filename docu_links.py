@@ -11,3 +11,6 @@ except cfg.ConfigError as err:
     print("Fatal error: cannot proceed")
     print (err)
     print("Forced stop...")
+    exit()
+
+print("hehe")
