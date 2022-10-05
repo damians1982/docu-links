@@ -6,14 +6,14 @@ from os.path import isdir
 
 print ("Loading configuration...")
 
-start_folder = r'c:\Users\poczt\Dropbox\Dokumenty\KSIAZKI_EBOOKI' #write starting folder here, r' = means raw string
+start_folder = r'c:\Users\poczt\Dropbox\Dokumenty\KSIAZKI_EBOOKI'
+build_dft = "build_dft" #first type of source action
+source_action ="build_dft1"
 
 class ConfigError(Exception):
     pass
 
 def read_start_folder():
-    print ("read_start_folder()")
-    
     #Check if start_folder is correct Path
     if(exists(start_folder)):
         print("Success: resource: "+start_folder+" exists")
@@ -23,9 +23,7 @@ def read_start_folder():
     
     #Check if start_folder is directory
     if(isdir(start_folder)):
-        print("Another Success: resource: +"+start_folder+" is directory")
+        print("Another Success: resource: "+start_folder+" is directory")
     else:
         raise ConfigError("Resource: "+start_folder+" is not directory")
-
-    print("Successfully located start_folder")
 

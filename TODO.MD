@@ -2,5 +2,12 @@
 # first script will start and read configuarion file 
 
 
-## 1. Read config files, if there is no config files then raise error
-## 2. If cannot read source file then exit
+## Initializing script - reading config
+## a. Read config files, if there is no config files then raise error
+## b. If cannot read source file then exit
+## c. Read Source Action -  
+## 	Source action types:
+## 	c1. build_dft - build dir file tree
+
+## d. Read Destination Action - 
+##
