@@ -8,7 +8,7 @@ print ("Loading configuration...")
 
 start_folder = r'c:\Users\poczt\Dropbox\Dokumenty\KSIAZKI_EBOOKI'
 build_dft = "build_dft" #first type of source action
-source_action ="build_dft1"
+source_action ="build_dft"  # build dir folder tree
 
 class ConfigError(Exception):
     pass
