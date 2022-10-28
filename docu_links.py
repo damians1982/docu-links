@@ -1,19 +1,28 @@
 from msilib.schema import Error
 import script_config as cfg
+import os
+
+start_folder =""
 
 class SourceActionDFT:
     "identifying and executing source action"
-    def __init__(self,param):
-        self.source_dir = param
-        print("Start working with directory:")
+    source_dir =""
+    def __init__(self,start_folder,source_action):
+        source_dir1 = start_folder
+        print("Start working with directory:"+start_folder)
     
+    def read_folder(self):
+        print("read_folder()")
+        with os.scandir(self.source_dir1) as entries:
+           pass
 
 try:
-    cfg.read_start_folder()
+    start_folder = cfg.read_start_folder()
     # if source action = dft -> execute dft action
     if(cfg.source_action==cfg.build_dft):
         print("Desired source action = build_dft")
-        SourceActionDFT("str")
+        item = SourceActionDFT(start_folder,cfg.source_action)
+        item.read_folder()
     else:
         print("Unknown source action. Aborting...")
         exit()

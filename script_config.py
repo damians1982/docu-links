@@ -27,3 +27,4 @@ def read_start_folder():
     else:
         raise ConfigError("Resource: "+start_folder+" is not directory")
 
+    return start_folder

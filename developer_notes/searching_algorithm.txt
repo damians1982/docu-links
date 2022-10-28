@@ -1,0 +1,9 @@
+
+
+
+#funkcja raad_folder(folder):
+    for item in folder:
+        if(item.isDir):
+            read_folder(folder)
+        else:
+            print_path_to_file
