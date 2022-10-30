@@ -36,4 +36,5 @@ except cfg.ConfigError as err:
 
 #some playing with changing file from github account - only educational purposes
 #from now on i work on this project having it on my gitbug - another educational comment
+#just nearly empty comment
 print("Finish script.")
