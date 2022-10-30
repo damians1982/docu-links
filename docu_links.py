@@ -34,4 +34,5 @@ except cfg.ConfigError as err:
     print("Forced stop...")
     exit()
 
+#some playing with changing file from github account - only educational purposes
 print("Finish script.")
